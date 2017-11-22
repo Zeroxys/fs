@@ -10,7 +10,10 @@ const fetchNotes = () => {
   }
 }
 
-const saveNotes = notes => fs.writeFileSync('notes-data.json', JSON.stringify(notes))
+const saveNotes = notes => {
+  fs.writeFileSync('notes-data.json', JSON.stringify(notes))
+  return true
+}
 
 module.exports = {
   saveNotes,

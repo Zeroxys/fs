@@ -21,7 +21,9 @@ const addNote = (title, body) => {
 const removeNote = (title) =>  {
   let notes = utils.fetchNotes()
   let newNotes = notes.filter( note =>  note.title !== title)
-  utils.saveNotes(newNotes)
+  let save = utils.saveNotes(newNotes)
+  if(save) console.log('document remove')
+
 }
 
 const getNote = (title) => {

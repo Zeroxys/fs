@@ -16,7 +16,7 @@ const yargs = require('yargs')
 })
 .command('remove', 'remove a note specif a title', {
   remove : {
-    describe : 'remove a note from the fs',
+    describe : 'specific a title for remove',
   }
 })
 
