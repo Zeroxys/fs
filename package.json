@@ -1,0 +1,19 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "nodemon": "nodemon app.js",
+    "start": "npm run nodemon"
+  },
+  "author": " <miguelzavalac@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "lodash": "^4.17.4",
+    "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "yargs": "^10.0.3"
+  }
+}
