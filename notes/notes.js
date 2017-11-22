@@ -1,4 +1,4 @@
-const utils = require('./utils/utils')
+const utils = require('../utils/utils')
 
 const addNote = (title, body) => {
   const notes = utils.fetchNotes()

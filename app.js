@@ -1,11 +1,28 @@
 const opt = require('./opts')
 
 const yargs = require('yargs')
+
 .command('add', 'Add a new note', {
+  title: {
+    describe : 'title of note',
+    demand: true,
+    alias: 't'
+  },
   body: {
     describe : 'body of note',
     demand: true,
     alias: 'b'
+  }
+})
+.command('remove', 'remove a note specif a title', {
+  remove : {
+    describe : 'remove a note from the fs',
+  }
+})
+
+.command('list', 'list all notes', {
+  list : {
+    describe : 'list all items',
   }
 })
 .help()
